@@ -5,6 +5,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1() {
@@ -72,5 +75,42 @@ public class Main {
         System.out.println(frog);
         frog=frog+4;
         System.out.println(frog);
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        var firstBoxerWeight= 78.2;
+        System.out.println("Вес первого боксера"+ firstBoxerWeight+ "кг!");
+        var secondBoxerWeight= 82.7;
+        System.out.println("Вес второго боксера"+ secondBoxerWeight+ "кг!");
+        var totalWeightBoxers=(firstBoxerWeight+secondBoxerWeight);
+        System.out.println("Общий вес двух бойцов"+ totalWeightBoxers+ "кг!");
+        var differenceWeight= (secondBoxerWeight-firstBoxerWeight);
+        System.out.println("Разница в весе между бойцами"+ differenceWeight+ "кг!");
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        var firstBoxerWeight= 78.2;
+        System.out.println("Вес первого боксера"+ firstBoxerWeight+ "кг!");
+        var secondBoxerWeight= 82.7;
+        System.out.println("Вес второго боксера"+ secondBoxerWeight +"кг!");
+        var differenceWeight= (secondBoxerWeight - firstBoxerWeight);
+        System.out.println("Разница в весе между бойцами"+ differenceWeight +"кг!");
+        var weightDifference=(secondBoxerWeight / firstBoxerWeight)%differenceWeight;
+        System.out.println("Разница в весе"+ weightDifference +"%");
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        var openingHours = 640;
+        System.out.println("Всего"+openingHours+"часов");
+        var employeeDedicatesWork = 8;
+        System.out.println("Каждый сотрудник посвещает"+ employeeDedicatesWork +"часов");
+        var employeesCompany=(openingHours/employeeDedicatesWork);
+        System.out.println("Всего работников компании"+employeesCompany+"человек");
+        var moreEmployees=94;
+        System.out.println("Другие работники"+moreEmployees);
+        var allEmployees=(employeesCompany+moreEmployees);
+        System.out.println("Всего работников"+allEmployees+"в компании");
+        var workingHours=(openingHours/allEmployees);
+        System.out.println("Если в компании работает"+allEmployees+"человек, то всего"+workingHours+"часов работы может быть поделено между сотрудниками");
     }
 }
